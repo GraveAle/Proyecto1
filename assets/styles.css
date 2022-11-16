@@ -5,7 +5,8 @@ body {
 
 a{
     text-decoration: none;
-    color:#FFFFFF;
+    color:#FFFFFF !important;
+    text-decoration: none !important;
 }
 header {
     display: flex;
@@ -28,7 +29,53 @@ nav a {
 
 }
 nav a:hover {
-    color: yellow;
+    color: yellow !important;
+}
+
+.text-justify {
+    text-align: center;
+}
+
+.fondo{
+    background-image: url("./images/ciudad.jpg");
+    background-color: #8096a2;
+}
+
+section div {
+    color: #FFFFFF;
+} 
+
+.grid-layout{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'cabeza cabeza'
+                        'izq der';
+    padding: 20px;
+    gap: 15px;
+                        
+    
+}
+
+.caja{
+     
+     text-align: justify;
+}
+
+.cabeza
+{
+    grid-area: cabeza;
+    text-align: center;
+}
+
+.izq {
+    text-align: justify;
+    grid-area: izq;
+}
+
+.der {
+    text-align: justify;
+    grid-area: der;
 }
 
 @media (max-width:700px){
@@ -38,4 +85,6 @@ nav a:hover {
     nav{
         padding: 10px 0px;
     }
+
+    
 }
