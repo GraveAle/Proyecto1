@@ -15,7 +15,6 @@ header {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    /* word-spacing: 20pt; */
 
 }
 
@@ -63,8 +62,12 @@ section div {
     font-size: x-large;
     font-weight: bolder;
     color: yellow;
-    text-align: justify;
+    text-align: center;
     border: 2.5px solid #8096a2;
+}
+
+span:hover{
+    color: yellow;
 }
 
 .cabeza
@@ -96,7 +99,7 @@ section div {
 .contenedor{
     display: flex;
     background-color: #ffffff;
-    flex: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     padding: 10px;   
 }
@@ -110,7 +113,20 @@ section div {
     justify-content: center;
     text-align: justify;
     border: 1px solid black;
+}
 
+.mid {
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    
+    min-height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
 }
 
 @media (max-width:720px){
